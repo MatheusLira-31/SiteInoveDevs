@@ -1,0 +1,64 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --font-color1:#fff;
+    --font-color2:#000;
+    --font-color3:rgb(14, 126, 201);
+    --bg-color1: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.3));
+    --bg-color2:#ccc;
+    --bg-color3: #000;
+}
+  
+body{
+    width: 100%;
+    background: var(--bg-color3);
+}
+
+.imglogo{
+    height: 60px;
+    width: 80px;
+}
+
+header{
+    height: 70vh;
+    width: 100%;
+    background-image: url(../assents/planeta.png); /*foto do planeta*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    position: fixed; /* Fixa a navbar no topo */
+    margin-top: 40px;
+    width: 100%; /* Faz a navbar ocupar toda a largura da tela */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    background-color: transparent;
+    height: 10vh;
+    z-index: 1000; /* Garante que a navbar fique acima de outros elementos */
+}
+
+nav ul li{
+    display: inline-flex;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav ul li a{
+    display: flex;
+    color:var(--font-color1);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    color:var(--bg-color2);
+    font-weight: 700;
+  }
