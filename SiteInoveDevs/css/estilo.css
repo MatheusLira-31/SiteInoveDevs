@@ -64,18 +64,31 @@ header{
     font-weight: 400;
 }
 
-.login-button button {
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    background-color: #0187a7;
+.button-mudaCor{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 2.5px 0 #39a2db59;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+.ball{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #053742;
+    transition: left 1s;
+}
+.ball-move{
+    left: calc(100% - 40px);
 }
 
-.login-button button a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.1rem;
+.dark{
+    background-color: #39a2db;
 }
 
 .mobile-menu-icon {
@@ -86,6 +99,8 @@ header{
     display: none;
 }
 
+
+
 @media screen and (max-width: 600px) {
 
     .nav-bar {
@@ -94,7 +109,7 @@ header{
     .nav-item {
         display: none;
     }
-    .login-button {
+    .button-mudaCor {
         display: none;
     }
     .mobile-menu-icon {
@@ -115,12 +130,12 @@ header{
         display: block;
         padding-top: 1.2rem;
     }
-    .mobile-menu .login-button {
+    .mobile-menu .button-mudaCor {
         display: block;
         padding: 1rem 2rem;
     }
-    .mobile-menu .login-button button {
-        width: 100%;
+    .mobile-menu .button-mudaCor {
+        width: 20%;
     }
     .icon{
         height: 60px;
@@ -130,4 +145,14 @@ header{
         display: block;
     }
 
+    .button {
+        width: 70px;
+        height: 30px;
+        top: 10px;
+        right: 10px;
+        font-size: 0.8rem; /* Reduzindo o tamanho da fonte se houver texto no botão */
+    }
 }
+
+
+
