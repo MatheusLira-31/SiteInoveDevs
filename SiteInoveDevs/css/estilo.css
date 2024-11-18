@@ -24,14 +24,14 @@ body{
 }
 
 .imglogo{
-    height: 60px;
-    width: 200px;
+    height: 45px;
+    width: 150px;
 }
 
 header{
     height: 70vh;
     width: 100%;
-    background-image: url(../assents/planeta.png); /*foto do planeta*/
+    background-image: url(../assents/planeta); /*foto do planeta*/
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -87,8 +87,8 @@ header{
     left: calc(100% - 40px);
 }
 
-.dark{
-    background-color: #39a2db;
+.white{
+    background-color: #ffffff;
 }
 
 .mobile-menu-icon {
@@ -109,9 +109,7 @@ header{
     .nav-item {
         display: none;
     }
-    .button-mudaCor {
-        display: none;
-    }
+
     .mobile-menu-icon {
         display: block;
     }
@@ -127,15 +125,9 @@ header{
         padding-bottom: 1rem;
     }
     .mobile-menu .nav-item {
-        display: block;
+        display: flex;
+        justify-content: center;
         padding-top: 1.2rem;
-    }
-    .mobile-menu .button-mudaCor {
-        display: block;
-        padding: 1rem 2rem;
-    }
-    .mobile-menu .button-mudaCor {
-        width: 20%;
     }
     .icon{
         height: 60px;

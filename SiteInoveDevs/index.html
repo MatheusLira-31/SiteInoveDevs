@@ -1,60 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>INOVE DEVS</title>
-    <link rel="stylesheet" href="css/estilo.css">
-</head>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <img class="imglogo" src="assents/LogoInoveDevs.png" alt="">
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"><a href="./index.html" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"> Quem Somos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
-                </ul>
-            </div>
-            <div class="button-mudaCor">
-                <div class="ball"></div>
-            </div>
-
-
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assents/menu_white.png" alt=""></button>
-            </div>
-        </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="./index.html" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"> Quem Somos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
-            </ul>
-            <div class="button-mudaCor">
-                <div class="ball"></div>
-            </div>
-            <script>
-                document.querySelector('.ball').addEventListener('click', (e)=>{
-                    e.target.classList.toggle('ball-move');
-                    document.body.classList.toggle('dark');
-                });
-            </script>
-
+      <nav class="nav-bar">
+        <div class="logo">
+          <img class="imglogo" src="assents/LogoInoveDevs.png" alt="" />
         </div>
+        <div class="nav-list">
+          <ul>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"> Quem Somos</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+            <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
+          </ul>
+        </div>
+        <div class="mobile-menu-icon">
+          <button onclick="menuShow()">
+            <img class="icon" src="assents/menu_white.png" alt="" />
+          </button>
+        </div>
+      </nav>
+      <div class="mobile-menu">
+        <ul>
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Início</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Projetos</a></li>
+          <li class="nav-item"><a href="#" class="nav-link"> Quem Somos</a></li>
+          <li class="nav-item"><a href="#" class="nav-link"> Contato</a></li>
 
-
+        </ul>
+      </div>
     </header>
 
-
     <script src="js/script.js"></script>
-</body>
-
+  </body>
 </html>
