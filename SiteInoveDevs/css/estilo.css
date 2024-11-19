@@ -20,7 +20,7 @@
   
 body{
     width: 100%;
-    background: var(--bg-color3);
+    background: var(--bg-color2);
 }
 
 .imglogo{
@@ -31,7 +31,7 @@ body{
 header{
     height: 70vh;
     width: 100%;
-    background-image: url(../assents/planeta); /*foto do planeta*/
+    background-image: url(../assents/planeta2.png); /*foto do planeta*/
     background-repeat: no-repeat;
     background-size: cover;
 }
